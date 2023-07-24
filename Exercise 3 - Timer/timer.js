@@ -4,6 +4,7 @@ var sec = setInterval(function(){
     counter --
     let value = document.getElementById('second')
     value.textContent = counter
+    console.log('value');
     if(counter<=0){
         clearInterval(sec);
     }
@@ -14,14 +15,31 @@ var add =document.getElementById('add');
 var reset =document.getElementById('reset');
 
 
-minus.addEventListener('click',function(){
-    counter =counter-1;
-})
-add.addEventListener('click',function(){
-    counter =counter+1;
-})
-reset.addEventListener('click',function(){
-    counter =0;
-})
 
 
+const value =document.getElementById('second')
+const btns=document.querySelectorAll('#btn')
+btns.forEach(function(btn){
+    btn.addEventListener('click',(e)=>{
+        const styles = e.currentTarget.classList
+        if(styles.contains("minus")){
+            counter--
+        }
+        else if(styles.contains("add")){
+            counter ++
+        }
+        else{
+            counter =0
+        }
+        if(counter>0){
+            value.style.color ="red"
+        }
+        if(counter<0){
+            value.style.color ="blue"
+        }
+        if(counter===0){
+            value.style.color ="green"
+        }
+        value.textContent =counter
+    })
+})
