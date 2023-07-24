@@ -53,18 +53,18 @@ function stopTimer() {
     reset.style.backgroundColor = "#ccc";
     reset.style.cursor = "not-allowed";
   } else {
-    document.getElementsByClassName("reset").disabled = false;
-    document.getElementsByClassName("reset").classList.remove("disabled");
-    document.getElementsByClassName("reset").style.backgroundColor = "#f44336";
-    document.getElementsByClassName("reset").style.cursor = "pointer";
+   reset.disabled = false;
+  reset.classList.remove("disabled");
+    reset.style.backgroundColor = "#f44336";
+    reset.style.cursor = "pointer";
   }
 
-  document.getElementsByClassName("add").classList.remove("disabled");
-  document.getElementsByClassName("subtract").classList.remove("disabled");
-  document.getElementsByClassName("add").style.backgroundColor = "#2196F3";
-  document.getElementsByClassName("subtract").style.backgroundColor = "#2196F3";
-  document.getElementsByClassName("add").style.cursor = "pointer";
-  document.getElementsByClassName("subtract").style.cursor = "pointer";
+  add.classList.remove("disabled");
+  subtract.classList.remove("disabled");
+  add.style.backgroundColor = "#2196F3";
+  subtract.style.backgroundColor = "#2196F3";
+  add.style.cursor = "pointer";
+  subtract.style.cursor = "pointer";
 }
 
 function resetTimer() {
