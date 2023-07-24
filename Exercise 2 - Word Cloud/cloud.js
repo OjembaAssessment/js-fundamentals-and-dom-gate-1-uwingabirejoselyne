@@ -1,1 +1,5 @@
-console.log("Exercise 2 - Word Cloud");
+
+const paragraphText = document.getElementById("myParagraph").innerText;
+const words = paragraphText.split(" ");
+
+
