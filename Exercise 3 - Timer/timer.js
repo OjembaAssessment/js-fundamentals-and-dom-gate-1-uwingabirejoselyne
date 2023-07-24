@@ -69,19 +69,19 @@ function stopTimer() {
 
 function resetTimer() {
   if (!isCounting && seconds === 0) {
-    document.getElementsByClassName("start-stop").disabled = true;
-    document.getElementsByClassName("start-stop").classList.add("disabled");
-    document.getElementsByClassName("start-stop").style.backgroundColor = "#ccc";
+    start.disabled = true;
+    start.classList.add("disabled");
+    start.style.backgroundColor = "#ccc";
 
     return;
   }
 
   seconds = 0;
   updateDisplay();
-  document.getElementsByClassName("reset").disabled = true;
-  document.getElementsByClassName("reset").classList.add("disabled");
-  document.getElementsByClassName("reset").style.backgroundColor = "#ccc";
-  document.getElementsByClassName("reset").style.cursor = "not-allowed";
+  reset.disabled = true;
+  reset.classList.add("disabled");
+  reset.style.backgroundColor = "#ccc";
+  reset.style.cursor = "not-allowed";
 }
 
 function addSecond() {
