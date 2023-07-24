@@ -1,5 +1,5 @@
 let intervalId;
-let seconds = 0;
+let seconds = 29;
 let isCounting = false;
 
 function updateDisplay() {
