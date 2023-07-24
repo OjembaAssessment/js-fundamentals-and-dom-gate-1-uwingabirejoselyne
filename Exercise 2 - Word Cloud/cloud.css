@@ -1,4 +1,30 @@
 #myWordCloud {
-    color: red;
-    font-size: 64px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 20px;
+  }
+  
+  #myWordCloud h2 {
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  #clouds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 20px;
+  }
+  
+  .cloud-word {
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
